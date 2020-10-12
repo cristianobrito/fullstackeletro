@@ -1,0 +1,4 @@
+    function exibir_categoria()
+    {
+
+    }
