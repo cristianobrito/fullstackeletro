@@ -14,15 +14,19 @@
     ====================cristiano brito de oliveira==================================================================-->
 
     <!---================[ INICIO MENU ]=============================================================================-->
-
+<!--menu extraido pela aula de php ele foi colado em outro arquivo
         <nav class="menu">
-            <a class="coluna1" href="index.html"><img class="imagem_ajuste" 
+            <a class="coluna1" href="index.php"><img class="imagem_ajuste" 
                     src="./imagens/logo_fullstackeletro.jpg"></a>
-            <a class="coluna2" href="produtos.html">Produtos</a>
-            <a class="coluna3" href="lojas.html">Nossas Lojas</a>
-            <a class="coluna4" href="contato.html">Contato</a>
+            <a class="coluna2" href="produtos.php">Produtos</a>
+            <a class="coluna3" href="lojas.php">Nossas Lojas</a>
+            <a class="coluna4" href="contato.php">Contato</a>
         </nav>
-
+-->
+<!--incluindo o arquivo pelo php ele foi colocado em todas as paginas no lugar do menu em html-->
+<?php
+    include('menu.html');
+?>
     <!---================[ FIM MENU ]================================================================================-->
 
 
@@ -53,5 +57,5 @@
         </footer>
 
     <!---================[ FIM RODAPÉ]==================================================================================-->
-        </body>
+
     </html>

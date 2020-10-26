@@ -1,0 +1,161 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Produtos - Full Stack Eletro
+        </title>
+        <link rel="stylesheet" href="./css/estilo.css">
+        <script src="funcoes.js"></script><!--linha que inclui o script externo nome funcoes.js-->
+    </head>
+
+    <body>
+    <!--ola todos a formatação esta em um arquivo css externo
+    ====================cristiano brito de oliveira==================================================================-->
+
+    <!---======================[ INICIO MENU ]===========================================================================-->
+
+    <?php
+    include('menu.html');
+    ?>
+
+    <!---======================[ FIM MENU ]===============================================================================-->
+
+
+
+    <!----=====================[ INICIO CABEÇALHO ]=======================================================================-->
+
+        <header>
+            <h1>Produtos</h1>
+        </header>
+        <hr>
+
+    <!----=====================[ FIM CABEÇALHO ]===========================================================================-->
+
+
+
+    <!----=====================[ INICIO LISTAS DE CATEGORIA ]===============================================================-->
+
+        <section class="categorias">
+
+            <h3 >Categorias</h3>
+            <ul>
+                <li onclick="exibir_todos()" class="g1">Todos (8)</li><!--a função exibir_categoria() foi criada para todos os itens do menu -->
+                <li onclick="exibir_categoria('geladeira')" class="g1">Geladeiras (2)</li>
+                <li onclick="exibir_categoria('fogao')" class="f1">Fogões (2)</li>
+                <li onclick="exibir_categoria('microondas')" class="m1">Microondas(2)</li>
+                <li onclick="exibir_categoria('lavaroupa')" class="lr1">Lavadora de roupa (2)</li>
+      <!--======<li onclick="exibir_categoria('lavaloucas')" class="ll1">Lavadora-louças (0)</li>=========trecho removido não tem lava louças-->
+            </ul>
+
+        </section>
+
+    <!----=====================[ FIM LISTAS DE CATEGORIA ]==================================================================-->
+
+
+    <!----=====================[ INICIO BOX DE PRODUTOS]====================================================================-->
+
+        <section class="produtos">
+            <div class="box_produto" id="geladeira" style="display: block;"><!--criou um id para identificar a categoria e display isso se repetiu pra todos e evento de click -->
+                <img src="./imagens/geladeira1.jpg" width="150px" onclick="destaque(this)"><!--criou a função destaque onclick evento-->
+                <br>
+                <p class="descricao">Geladeira Frost Free Brastemp Side Inverse 540 litros</p>
+                <hr>
+                <p class="descricao">De: <s>R$ 6.389,00</s></p>
+                <p class="desconto"><b class="precoDesconto"><i>Por:</i> R$ 5.019,00</b><br><b class="parcelamento">Em até
+                        11x de R$456,27 sem juros</b></p>
+                
+            </div>
+    <!--==============================================================================================================-->
+            <div class="box_produto" id="fogao" style="display: block;">
+                <img src="./imagens/fogao1.webp" width="150px" onclick="destaque(this)"> 
+                <br>
+                <p class="descricao">Fogão 5 Bocas Preto Confidente</p>
+                <hr>
+                <p class="descricao">De: <s>R$ 2.189,00</s></p>
+                <p class="desconto"><b class="precoDesconto"><i>Por:</i> R$ 1.998,00</b><br><b class="parcelamento">Em até
+                        11x de R$181,63 sem juros</b></p>
+                
+            </div>
+    <!--==============================================================================================================-->
+            <div class="box_produto" id="microondas" style="display: block;">
+                <img src="./imagens/microondas1.jpg" width="169px" onclick="destaque(this)">
+                <p class="descricao">Microondas Panasonic 10 Litros</p>
+                <hr>
+                <p class="descricao">De: <s>R$ 1.099,00</s></p>
+                <p class="preco"></p>
+                <p class="desconto"><b class="precoDesconto"><i>Por:</i> R$ 759,00</b><br><b class="parcelamento">Em até 11x
+                        de R$69,00 sem juros</b></p>
+                
+            </div>
+    <!--==============================================================================================================-->
+            <div class="box_produto" id="lavaroupa" style="display: block;">
+                <img src="./imagens/maquinadelavar1.jpg" width="150px" onclick="destaque(this)">
+                <p class="descricao">Lavadora Brastemp 20 Litros</p>
+                <hr>
+                <p class="descricao">De: <s>R$ 2.799,00</s></p>
+                <p class="preco"></p>
+                <p class="desconto"><b class="precoDesconto"><i>Por:</i> R$ 2.459,00</b><br><b class="parcelamento">Em até
+                        11x de R$223,54 sem juros</b></p>
+            </div>
+    <!--==============================================================================================================-->
+            <div class="box_produto" id="geladeira" style="display: block;">
+                <img src="./imagens/geladeira2.jpg" width="150px" onclick="destaque(this)">
+                <br>
+                <p class="descricao">Geladeira Frost Free Brastemp Side Inverse 540 litros</p>
+                <hr>
+                <p class="descricao">De: <s>R$ 6.389,00</s></p>
+                <p class="desconto"><b class="precoDesconto"><i>Por:</i> R$ 5.019,00</b><br><b class="parcelamento">Em até
+                        11x de R$456,27 sem juros</b></p>
+
+            </div>
+    <!--==============================================================================================================-->
+            <div class="box_produto" id="fogao" style="display: block;">
+                <img src="./imagens/fogao2.jpg" width="150px" onclick="destaque(this)">
+                <br>
+                <p class="descricao">Fogão 5 Bocas Preto Confidente</p>
+                <hr>
+                <p class="descricao">De: <s>R$ 2.189,00</s></p>
+                <p class="desconto"><b class="precoDesconto"><i>Por:</i> R$ 1.998,00</b><br><b class="parcelamento">Em até
+                        11x de R$181,63 sem juros</b></p>
+            </div>
+    <!--==============================================================================================================-->
+            <div class="box_produto" id="microondas" style="display: block;">
+                <img src="./imagens/microondas2.jpg" width="168px" onclick="destaque(this)">
+                <p class="descricao">Microondas Panasonic 10 Litros</p>
+                <hr>
+                <p class="descricao">De: <s>R$ 1.099,00</s></p>
+                <p class="preco"></p>
+                <p class="desconto"><b class="precoDesconto"><i>Por:</i> R$ 759,00</b><br><b class="parcelamento">Em até 11x
+                        de R$69,00 sem juros</b></p>
+            </div>
+    <!--==============================================================================================================-->
+            <div class="box_produto" id="lavaroupa" style="display: block;">
+                <img src="./imagens/lavaroupas3.png" width="150px" onclick="destaque(this)">
+                <p class="descricao">Lavadora Brastemp 20 Litros</p>
+                <hr>
+                <p class="descricao">De: <s>R$ 2.799,00</s></p>
+                <p class="preco"></p>
+                <p class="desconto"><b class="precoDesconto"><i>Por:</i> R$ 2.459,00</b><br><b class="parcelamento">Em até
+                        11x de R$223,54 sem juros</b></p>
+            </div>
+    <!--==============================================================================================================-->
+        </section>
+
+    <!----=====================[ FIM BOX DE PRODUTOS]==================================================================-->
+
+        <br><br><br>
+
+    <!--==========================[ NICIO do RODAPÉ ]===================================================================-->
+
+        <footer id="rodape">
+            <p id="formas_pagamento"><b>Formas de pagamento</b></p>
+            <img src="./imagens/logo_pagamento.jpg" width="30%">
+            <p>&copy; Recod Pro</p>
+        </footer>
+
+    <!--==========================[ FIM do RODAPÉ ]======================================================================-->
+    </body>
+
+    </html>
